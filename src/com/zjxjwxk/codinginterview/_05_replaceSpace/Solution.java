@@ -37,13 +37,11 @@ public class Solution {
         int i = str.length - 1, j = newLength - 1;
         while (i != j) {
             if (newStr[i] != ' ') {
-                newStr[j] = newStr[i];
-                --j;
+                newStr[j--] = newStr[i];
             } else {
-                newStr[j] = '0';
-                newStr[j - 1] = '2';
-                newStr[j - 2] = '%';
-                j -= 3;
+                newStr[j--] = '0';
+                newStr[j--] = '2';
+                newStr[j--] = '%';
             }
             --i;
         }
