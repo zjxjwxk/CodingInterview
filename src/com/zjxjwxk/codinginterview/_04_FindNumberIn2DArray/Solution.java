@@ -28,7 +28,7 @@ package com.zjxjwxk.codinginterview._04_FindNumberIn2DArray;
  */
 public class Solution {
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
-        if (matrix.length == 0 || matrix[0].length == 0) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
         int i = 0, j = matrix[0].length - 1;

@@ -14,17 +14,27 @@ package com.zjxjwxk.codinginterview._03_FindRepeatNumber;
  */
 public class Solution2 {
     public static int findRepeatNumber(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
         int left = 1, right = nums.length - 1, mid, count;
-        while (left < right) {
+        while (left <= right) {
             mid = ((right - left) >> 1) + left;
             count = countNumber(nums, left, mid);
+            if (left == right) {
+                if (count > 1) {
+                    return left;
+                } else {
+                    break;
+                }
+            }
             if (count > mid - left + 1) {
                 right = mid;
             } else {
                 left = mid + 1;
             }
         }
-        return left;
+        return -1;
     }
 
     public static int countNumber(int[] nums, int left, int right) {

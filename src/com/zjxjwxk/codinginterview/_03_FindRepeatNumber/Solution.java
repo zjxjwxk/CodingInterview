@@ -21,6 +21,9 @@ package com.zjxjwxk.codinginterview._03_FindRepeatNumber;
  */
 public class Solution {
     public static int findRepeatNumber(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
         for (int i = 0; i < nums.length; ++i) {
             while (i != nums[i]) {
                 if (nums[i] == nums[nums[i]]) {
