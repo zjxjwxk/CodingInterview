@@ -15,18 +15,6 @@ package com.zjxjwxk.codinginterview._06_reversePrint;
  * @author zjxjwxk
  * @date 2020/7/21 9:43 下午
  */
-
-import java.util.Stack;
-
-/**
- * Definition for singly-linked list.
- */
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
-
 public class Solution {
     public static int[] reversePrint(ListNode head) {
         if (head == null) {
@@ -46,4 +34,13 @@ public class Solution {
         }
         return arr;
     }
+}
+
+/**
+ * Definition for singly-linked list.
+ */
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
 }
