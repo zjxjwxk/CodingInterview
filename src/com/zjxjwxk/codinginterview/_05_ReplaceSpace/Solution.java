@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._05_replaceSpace;
+package com.zjxjwxk.codinginterview._05_ReplaceSpace;
 
 import java.util.Arrays;
 

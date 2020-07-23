@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._06_reversePrint;
+package com.zjxjwxk.codinginterview._06_ReversePrint;
 
 /**
  * 剑指 Offer 06. 从尾到头打印链表

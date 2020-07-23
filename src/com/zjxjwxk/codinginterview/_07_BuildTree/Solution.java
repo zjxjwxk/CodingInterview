@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._07_buildTree;
+package com.zjxjwxk.codinginterview._07_BuildTree;
 
 /**
  * 剑指 Offer 07. 重建二叉树
