@@ -31,8 +31,8 @@ public class Solution {
             return 1;
         }
         int fibN = 0, fibA = 0, fibB = 1;
-        for (int i = 2; i <= n; i++) {
-            fibN = fibA + fibB;
+        for (int i = 2; i <= n; ++i) {
+            fibN = (fibA + fibB) % 1000000007;
             fibA = fibB;
             fibB = fibN;
         }
@@ -40,6 +40,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(fib(10));
+        System.out.println(fib(45));
     }
 }
