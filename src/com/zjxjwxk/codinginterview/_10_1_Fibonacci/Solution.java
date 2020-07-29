@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._10_Fibonacci;
+package com.zjxjwxk.codinginterview._10_1_Fibonacci;
 
 /**
  * 剑指 Offer 10- I. 斐波那契数列

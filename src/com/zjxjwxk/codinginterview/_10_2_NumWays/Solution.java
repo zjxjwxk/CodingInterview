@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._11_NumWays;
+package com.zjxjwxk.codinginterview._10_2_NumWays;
 
 /**
  * 剑指 Offer 10- II. 青蛙跳台阶问题
