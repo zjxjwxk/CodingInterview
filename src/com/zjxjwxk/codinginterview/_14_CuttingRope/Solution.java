@@ -18,6 +18,7 @@ package com.zjxjwxk.codinginterview._14_CuttingRope;
  * 提示：
  * 2 <= n <= 58
  *
+ * 动态规划解法
  * @author zjxjwxk
  * @date 2020/8/8 11:36 下午
  */
