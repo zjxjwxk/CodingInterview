@@ -28,6 +28,16 @@ package com.zjxjwxk.codinginterview._16_MyPow;
  */
 public class Solution {
 
+    /**
+     * 快速幂解析（二进制角度）：
+     *
+     * 利用十进制数字 n 的二进制表示，可对快速幂进行数学化解释。
+     * 见LeetCode题解：https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/mian-shi-ti-16-shu-zhi-de-zheng-shu-ci-fang-kuai-s/
+     *
+     * @param x 底数
+     * @param n 指数
+     * @return 结果
+     */
     public static double myPow(double x, int n) {
         if (x == 0) {
             return 0;
