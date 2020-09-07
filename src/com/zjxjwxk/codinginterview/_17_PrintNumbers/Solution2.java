@@ -19,12 +19,18 @@ package com.zjxjwxk.codinginterview._17_PrintNumbers;
  */
 public class Solution2 {
 
-    public static void printNumbers(int n) {
+    private static int[] ans;
+    private static int count;
+
+    public static int[] printNumbers(int n) {
         char[] number = new char[n];
+        ans = new int[(int) Math.pow(10, n) - 1];
+        count = 0;
         for (int i = 0; i < n; ++i) {
             number[i] = '0';
         }
         printNumbersRecursively(number, 0);
+        return ans;
     }
 
     private static void printNumbersRecursively(char[] number, int index) {
@@ -34,22 +40,28 @@ public class Solution2 {
         for (int i = 0; i <= 9; ++i) {
             number[index] = (char) ('0' + i);
             if (index == number.length - 1) {
-                printNumber(number);
+                int num = Integer.parseInt(new String(number));
+                if (num != 0) {
+                    ans[count++] = num;
+                }
             } else {
                 printNumbersRecursively(number, index + 1);
             }
         }
     }
 
-    private static void printNumber(char[] number) {
-        for (int i = 0; i < number.length; ++i) {
-            if (number[i] != '0') {
-                System.out.println(number[i]);
+    private static void printArr(int[] arr) {
+        System.out.print('[');
+        for (int i = 0; i < arr.length; ++i) {
+            if (i != 0) {
+                System.out.print(',');
             }
+            System.out.print(arr[i]);
         }
+        System.out.print(']');
     }
 
     public static void main(String[] args) {
-        printNumbers(1);
+        printArr(printNumbers(1));
     }
 }
