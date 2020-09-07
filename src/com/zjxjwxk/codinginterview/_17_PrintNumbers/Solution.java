@@ -44,6 +44,7 @@ public class Solution {
                 ++sum;
             }
             if (sum >= 10) {
+                // 到达最大值
                 if (i == 0) {
                     return false;
                 }
