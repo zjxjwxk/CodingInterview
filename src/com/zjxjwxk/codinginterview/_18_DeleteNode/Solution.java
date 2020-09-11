@@ -71,7 +71,7 @@ public class Solution {
         head.next.next = new ListNode(1);
         head.next.next.next = new ListNode(9);
 
-        solution.deleteNode(head, 5);
+        head = solution.deleteNode(head, 5);
         solution.printList(head);
     }
 }
