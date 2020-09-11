@@ -53,4 +53,25 @@ public class Solution {
         }
         return head;
     }
+
+    public void printList(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val);
+            if (node.next != null) {
+                System.out.print("->");
+            }
+            node = node.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        ListNode head = new ListNode(4);
+        head.next = new ListNode(5);
+        head.next.next = new ListNode(1);
+        head.next.next.next = new ListNode(9);
+
+        solution.deleteNode(head, 5);
+        solution.printList(head);
+    }
 }
