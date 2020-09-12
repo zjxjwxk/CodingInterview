@@ -44,6 +44,8 @@ package com.zjxjwxk.codinginterview._19_IsMatch;
  * s 可能为空，且只包含从 a-z 的小写字母。
  * p 可能为空，且只包含从 a-z 的小写字母以及字符 . 和 *，无连续的 '*'。
  *
+ * 递归解法
+ *
  * @author Xinkang Wu
  * @date 2020/9/12 9:10 上午
  */
