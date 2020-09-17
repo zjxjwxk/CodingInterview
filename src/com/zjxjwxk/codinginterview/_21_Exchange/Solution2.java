@@ -65,9 +65,11 @@ public class Solution2 {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
         int[] nums = new int[]{1, 2, 3, 4};
+        // 奇数出现在偶数前
         solution.exchange(nums, new IsEvent());
         solution.printArr(nums);
         nums = new int[]{1, -2, 3, -4};
+        // 负数出现在正数前
         solution.exchange(nums, new IsPositive());
         solution.printArr(nums);
     }
