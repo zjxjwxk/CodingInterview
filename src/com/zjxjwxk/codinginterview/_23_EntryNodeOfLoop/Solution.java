@@ -61,7 +61,11 @@ public class Solution {
         Solution solution = new Solution();
         ListNode head = solution.createLoopLinkedList(6);
         ListNode entry = solution.entryNodeOfLoop(head);
-        System.out.println(entry.val);
+        if (entry == null) {
+            System.out.println("Not a loop linked list");
+        } else {
+            System.out.println("Entry Node val: " + entry.val);
+        }
     }
 
     /**
