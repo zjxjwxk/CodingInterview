@@ -21,20 +21,20 @@ public class Solution {
         if (head == null || k <= 0) {
             return null;
         }
-        ListNode p1 = head;
+        ListNode aheadNode = head;
         int i;
-        for (i = 0; i < (k - 1) && p1.next != null; ++i) {
-            p1 = p1.next;
+        for (i = 0; i < (k - 1) && aheadNode.next != null; ++i) {
+            aheadNode = aheadNode.next;
         }
         if (i != k - 1) {
             return null;
         }
-        ListNode p2 = head;
-        while (p1.next != null) {
-            p1 = p1.next;
-            p2 = p2.next;
+        ListNode behindNode = head;
+        while (aheadNode.next != null) {
+            aheadNode = aheadNode.next;
+            behindNode = behindNode.next;
         }
-        return p2;
+        return behindNode;
     }
 
     private void printLinkedList(ListNode head) {
