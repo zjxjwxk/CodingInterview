@@ -47,14 +47,19 @@ public class Solution {
         }
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
+    private ListNode createLinkedList(int num) {
         ListNode head = new ListNode(1), temp = head;
-        for (int i = 1; i <= 5; ++i) {
+        for (int i = 1; i <= num; ++i) {
             temp.next = new ListNode(i);
             temp = temp.next;
         }
         temp.next = null;
+        return head;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        ListNode head = solution.createLinkedList(5);
         solution.printLinkedList(solution.getKthFromEnd(head, 2));
     }
 
