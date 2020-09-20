@@ -48,7 +48,7 @@ public class Solution {
     }
 
     private ListNode createLinkedList(int num) {
-        ListNode head = new ListNode(1), temp = head;
+        ListNode head = new ListNode(0), temp = head;
         for (int i = 1; i <= num; ++i) {
             temp.next = new ListNode(i);
             temp = temp.next;
