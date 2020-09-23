@@ -10,10 +10,10 @@ public class Solution {
         if (root == null) {
             return null;
         }
-        TreeNode node = new TreeNode(root.val);
-        node.left = mirrorTree(root.right);
-        node.right = mirrorTree(root.left);
-        return node;
+        TreeNode temp = root.left;
+        root.left = mirrorTree(root.right);
+        root.right = mirrorTree(temp);
+        return root;
     }
 
     /**
