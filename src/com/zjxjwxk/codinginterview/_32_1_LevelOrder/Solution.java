@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._32_LevelOrder;
+package com.zjxjwxk.codinginterview._32_1_LevelOrder;
 
 import java.util.ArrayList;
 import java.util.Deque;
