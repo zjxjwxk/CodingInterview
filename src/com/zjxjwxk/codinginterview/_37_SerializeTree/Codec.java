@@ -15,6 +15,7 @@ import java.util.LinkedList;
  *     4   5
  * 序列化为 "[1,2,3,null,null,4,5]"
  *
+ * 层序遍历
  * @author zjxjwxk
  * @date 2020/10/12 2:02 下午
  */
