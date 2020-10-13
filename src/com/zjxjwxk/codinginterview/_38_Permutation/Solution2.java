@@ -25,23 +25,21 @@ public class Solution2 {
 
     private char[] chArr;
     private List<String> ansList;
-    private int len;
 
     public String[] permutation(String s) {
-        len = s.length();
-        ansList = new ArrayList<>(len);
+        ansList = new ArrayList<>(s.length());
         chArr = s.toCharArray();
         dfs(0);
         return ansList.toArray(new String[0]);
     }
 
     private void dfs(int index) {
-        if (index >= len) {
+        if (index == chArr.length - 1) {
             ansList.add(new String(chArr));
             return;
         }
         Set<Character> set = new HashSet<>();
-        for (int i = index; i < len; ++i) {
+        for (int i = index; i < chArr.length - 1; ++i) {
             if (!set.contains(chArr[i])) {
                 set.add(chArr[i]);
                 swapChar(index, i);
