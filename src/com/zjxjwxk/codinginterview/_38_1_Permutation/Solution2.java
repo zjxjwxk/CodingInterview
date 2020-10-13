@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._38_Permutation;
+package com.zjxjwxk.codinginterview._38_1_Permutation;
 
 import java.util.ArrayList;
 import java.util.HashSet;

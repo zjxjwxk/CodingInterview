@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._38_Permutation;
+package com.zjxjwxk.codinginterview._38_1_Permutation;
 
 import org.junit.jupiter.api.Test;
 
