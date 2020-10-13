@@ -1,4 +1,4 @@
-package com.zjxjwxk.codinginterview._36_treeToDoublyList;
+package com.zjxjwxk.codinginterview._36_TreeToDoublyList;
 
 /**
  * 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。
