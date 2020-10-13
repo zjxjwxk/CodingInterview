@@ -32,7 +32,7 @@ public class Solution2 {
         ansList = new ArrayList<>(len);
         chArr = s.toCharArray();
         dfs(0);
-        return ansList.toArray(new String[ansList.size()]);
+        return ansList.toArray(new String[0]);
     }
 
     private void dfs(int index) {
