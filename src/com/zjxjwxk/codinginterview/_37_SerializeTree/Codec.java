@@ -4,6 +4,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
+ * 剑指 Offer 37. 序列化二叉树
+ *
  * 请实现两个函数，分别用来序列化和反序列化二叉树。
  *
  * 示例: 
